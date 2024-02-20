@@ -31,6 +31,7 @@ steps:
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact'
 
+#script
 - script: |
     npm install
     npm run build
