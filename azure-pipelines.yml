@@ -7,9 +7,9 @@ trigger:
 - main
 
 pool: 
-  name: demo-agentpool  
-  demands:
-   - Agent.Version -gtVersion 3.x
+  name: Default
+  # demands:
+  #  - agent.name -equals demo-agentpool  
 
 steps:
 - task: NodeTool@0
