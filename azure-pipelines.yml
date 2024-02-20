@@ -7,9 +7,9 @@ trigger:
 - main
 
 pool: 
-  name: Default
-  demands:
-   - agent.name -equals demo-agentpool  
+  name: demo-agentpool  
+  # demands:
+  #  - agent.name -equals demo-agentpool  
 
 steps:
 - task: NodeTool@0
