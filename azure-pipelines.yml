@@ -8,8 +8,8 @@ trigger:
 
 pool: 
   name: demo-agentpool  
-  # demands:
-  #  - agent.name -equals demo-agentpool  
+  demands:
+   - Agent.Version -gtVersion 3.x
 
 steps:
 - task: NodeTool@0
