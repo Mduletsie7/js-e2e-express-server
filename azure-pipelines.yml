@@ -6,8 +6,10 @@
 trigger:
 - main
 
-pool: default
-  vmImage: ubuntu-latest
+pool: 
+  name: Default
+  demands:
+   - agent.name -equals Weltgeist  
 
 steps:
 - task: NodeTool@0
